@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'forecast_io'
+gem 'open-weather'
+gem 'gmaps4rails'
 
 gem 'geocoder'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
