@@ -27,3 +27,4 @@ module Test1
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+# clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night

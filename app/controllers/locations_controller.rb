@@ -10,7 +10,6 @@ class LocationsController < ApplicationController
       marker.lng location.longitude
     end
   end
-
   # GET /locations/1
   # GET /locations/1.json
   def show
