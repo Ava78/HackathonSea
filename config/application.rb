@@ -1,29 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-#require 'forecast_io'
-#require 'open_weather'
+require 'forecast_io'
+ForecastIO.api_key = 'd87d0f64e03938a7afd9ccfc58abbbff'
 
-# get current weather by city name
-#OpenWeather::Current.city("Cochin, IN")
-
-# get current weather by city id
-#OpenWeather::Current.city_id("1273874")
-
-# get current weather by geocode. (lat, lon)
-#OpenWeather::Current.geocode(9.94, 76.26)
-
-# get current weather for a list of city ids
-#OpenWeather::Current.cities([524901, 703448, 2643743])
-
-# get current weather for a bounding box
-#OpenWeather::Current.rectangle_zone(12, 32, 15, 37, 10)
-
-# get current weather for cities around a point
-#OpenWeather::Current.circle_zone(55.5, 37.5, 10)
-
-# get the current weather in degrees celsius
-#OpenWeather::Current.city("Cochin, IN", units: 'metric')
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
