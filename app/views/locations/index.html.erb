@@ -20,8 +20,37 @@
         <td><%= location.latitude %></td>
         <td><%= location.longitude %></td>
         <td><%= location.current_weather %>
-        <% if location.current_weather == "rain" %> <li class="icon-rainy"> </li>
-        <% else location.current_weather == "cloudy" %><li class="icon-cloud"></li>
+        <% if location.current_weather == "rain" %> <li class="icon-showers::before"> </li>
+        <% elsif location.current_weather == "sunset" %><li class="icon-sunset::before"></li>
+        <% elsif location.current_weather == "mist" %><li class="icon-mist::before"></li>
+        <% elsif location.current_weather == "sunrise" %><li class="icon-sunrise::before"></li>
+        <% elsif location.current_weather == "sun" %><li class="icon-sun::before"></li>
+        <% elsif location.current_weather == "moon" %><li class="icon-moon::after"></li>
+        <% elsif location.current_weather == "cloud" %><li class="icon-cloud::after"></li>
+        <% elsif location.current_weather == "drizzle" %><li class="icon-drizzle::before"></li>
+        <% elsif location.current_weather == "drizzle_sunny" %><li class="icon-drizzle.icon-sunny::after"></li>
+        <% elsif location.current_weather == "drizzle_night" %><li class="icon-drizzle.icon-night::after"></li>
+        <% elsif location.current_weather == "rainy" %><li class="icon-rainy::before"></li>
+        <% elsif location.current_weather == "rainy_sunny" %><li class="icon-rainy.icon-sunny::after"></li>
+        <% elsif location.current_weather == "rainy_night" %><li class="icon-rainy.icon-night::after"></li>
+        <% elsif location.current_weather == "snowy" %><li class="icon-snowy::before"></li>
+        <% elsif location.current_weather == "snowy_sunny" %><li class="icon-snowy.icon-sunny::after"></li>
+        <% elsif location.current_weather == "snowy_night" %><li class="icon-snowy.icon-night::after"></li>
+        <% elsif location.current_weather == "showers_sunny" %><li class="icon-showers.icon-sunny::after"></li>
+        <% elsif location.current_weather == "showers_night" %><li class="icon-showers.icon-night::after"></li>
+        <% elsif location.current_weather == "thunder" %><li class="icon-thunder::before"></li>
+        <% elsif location.current_weather == "thunder_sunny" %><li class="icon-thunder.icon-sunny::after"></li>
+        <% elsif location.current_weather == "thunder_night" %><li class="icon-thunder.icon-night::after"></li>
+        <% elsif location.current_weather == "frosty" %><li class="icon-frosty::before"></li>
+        <% elsif location.current_weather == "frosty_sunny" %><li class="icon-frosty.icon-sunny::after"></li>
+        <% elsif location.current_weather == "frosty_night" %><li class="icon-frosty.icon-night::after"></li>
+        <% elsif location.current_weather == "haim" %><li class="icon-hail::before"></li>
+        <% elsif location.current_weather == "hail_sunny" %><li class="icon-hail.icon-sunny::after"></li>
+        <% elsif location.current_weather == "hail_night" %><li class="icon-hail.icon-night::after"></li>
+        
+
+
+
           <% end %>
 
         </td>
@@ -37,7 +66,6 @@
 <br>
 
 <%= link_to 'New Location', new_location_path %>
-
 <div style='width: 800px;'>
   <div id="map" style='width: 800px; height: 400px;'> </div>
 </div>
@@ -49,4 +77,4 @@
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();
   });
-</script>
+</script> 

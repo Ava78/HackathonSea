@@ -1,4 +1,9 @@
-
+.icon-showers{
+  font-size: 50px;
+}
+.icon-sunset{
+  font-size: 50px;
+}
 html {
 -webkit-font-smoothing: antialiased;
 }
