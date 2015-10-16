@@ -7,7 +7,7 @@ class Weather
   end
 
   def currently
-    ForecastIO.forecast(location.latitude, location.longitude).try(:currently).try(:icon)
+    ForecastIO.forecast(location.latitude, location.longitude, location.temperature).try(:currently).try(:icon)
   end
 
 end
