@@ -1,0 +1,300 @@
+  [1m[36m (140.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (122.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateLocations (20151015095528)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "address" varchar, "latitude" float, "longitude" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151015095528"]]
+  [1m[35m (160.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-22 10:53:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/apprenti/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (10.7ms)
+Completed 200 OK in 97ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 10:53:30 +0200
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 2051ms (Views: 1883.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/base.self-2fc87a138ae56e9c169e7509cf25befc871bd73a4cc1ead0faa5ed5b9f85a4e5.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap-theme.min.self-9d66c8257854598a8bb867788558ea1daa20065a3fe9a827b5ed3fea25b98ba3.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap-theme.self-797c795b8478a63ecf57ed925bbf6d452e951329623561a6042c306da1b713f8.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/iconvault-preview.self-338653a452ae917bd2fdc0e9e52703b1551278ab7f10229d2f65db4546aa02c6.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/scaffolds.self-6fda90610f51dd29a9e8485fdc623d08007ac379185bd3d949b758500260ae76.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/skeleton.self-1b854ca8b78041efa6402ca2eb48197ad14e0caab8d8522c99f433d0c2c4d2ac.css?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/underscore.self-8c17561264389571750ac522c272868d7105cf5e3f8af4761d09489b631d177c.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/vendor.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/gmaps_google.self-fa0e6da1364c8e7d6ab3f96ef7716a301363a69a563986dfeaf57630f042904b.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-10-22 10:53:32 +0200
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2015-10-22 10:53:49 +0200
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (74.4ms)
+  Rendered locations/new.html.erb within layouts/application (100.0ms)
+Completed 200 OK in 221ms (Views: 214.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2015-10-22 10:53:54 +0200
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+vj2LZBxZJJid9I7cgzIRe7Y5BSdSJFfG8eb1zVRzzcSaDHl5iHC4fPDdPGBedE2nUDgnHfYBsMj1hVopaAfw==", "location"=>{"address"=>"Brest"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "Brest"], ["latitude", 48.390394], ["longitude", -4.486076], ["created_at", "2015-10-22 08:53:54.326407"], ["updated_at", "2015-10-22 08:53:54.326407"]]
+  [1m[36m (146.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 304ms (ActiveRecord: 147.5ms)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2015-10-22 10:53:54 +0200
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLocation Load (0.3ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered locations/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 153ms (Views: 122.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 10:53:58 +0200
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (16601.2ms)
+Completed 200 OK in 16706ms (Views: 16704.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 10:54:15 +0200
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (17033.3ms)
+Completed 200 OK in 17145ms (Views: 17142.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2015-10-22 10:54:32 +0200
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTr0nNioli/Gcjmv8q7WmUnluIzwmkoNNMCb9aY4xgpymLeD+XHUtgg06zTZYwL8hCvYntMwCFNEIN3PWHsBSQ==", "location"=>{"address"=>"Punta Cana"}, "commit"=>"Create Location"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["address", "Punta Cana"], ["latitude", 18.5820101], ["longitude", -68.40547289999999], ["created_at", "2015-10-22 08:54:32.977394"], ["updated_at", "2015-10-22 08:54:32.977394"]]
+  [1m[36m (139.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations/2
+Completed 302 Found in 304ms (ActiveRecord: 139.6ms)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2015-10-22 10:54:33 +0200
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered locations/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 119ms (Views: 117.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 10:54:39 +0200
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (33683.6ms)
+Completed 200 OK in 33852ms (Views: 33850.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 10:55:13 +0200
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.html.erb within layouts/application (34147.4ms)
+Completed 200 OK in 34288ms (Views: 34286.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 11:00:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+Completed   in 1179424ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 11:23:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.haml within layouts/application (1271.7ms)
+Completed 200 OK in 1653ms (Views: 1635.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 11:44:35 +0200
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.haml within layouts/application (4.4ms)
+Completed 200 OK in 2606ms (Views: 148.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-theme.self-797c795b8478a63ecf57ed925bbf6d452e951329623561a6042c306da1b713f8.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/bootstrap-theme.min.self-9d66c8257854598a8bb867788558ea1daa20065a3fe9a827b5ed3fea25b98ba3.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/base.self-2fc87a138ae56e9c169e7509cf25befc871bd73a4cc1ead0faa5ed5b9f85a4e5.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/iconvault-preview.self-338653a452ae917bd2fdc0e9e52703b1551278ab7f10229d2f65db4546aa02c6.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/scaffolds.self-6fda90610f51dd29a9e8485fdc623d08007ac379185bd3d949b758500260ae76.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/skeleton.self-1b854ca8b78041efa6402ca2eb48197ad14e0caab8d8522c99f433d0c2c4d2ac.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/underscore.self-8c17561264389571750ac522c272868d7105cf5e3f8af4761d09489b631d177c.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/gmaps_google.self-fa0e6da1364c8e7d6ab3f96ef7716a301363a69a563986dfeaf57630f042904b.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/vendor.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-10-22 11:44:38 +0200
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-10-22 11:54:48 +0200
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.4ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.haml within layouts/application (2.1ms)
+Completed 200 OK in 1291ms (Views: 101.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-theme.self-797c795b8478a63ecf57ed925bbf6d452e951329623561a6042c306da1b713f8.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/base.self-2fc87a138ae56e9c169e7509cf25befc871bd73a4cc1ead0faa5ed5b9f85a4e5.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/iconvault-preview.self-338653a452ae917bd2fdc0e9e52703b1551278ab7f10229d2f65db4546aa02c6.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/bootstrap-theme.min.self-9d66c8257854598a8bb867788558ea1daa20065a3fe9a827b5ed3fea25b98ba3.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/scaffolds.self-6fda90610f51dd29a9e8485fdc623d08007ac379185bd3d949b758500260ae76.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/skeleton.self-1b854ca8b78041efa6402ca2eb48197ad14e0caab8d8522c99f433d0c2c4d2ac.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/underscore.self-8c17561264389571750ac522c272868d7105cf5e3f8af4761d09489b631d177c.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/gmaps_google.self-fa0e6da1364c8e7d6ab3f96ef7716a301363a69a563986dfeaf57630f042904b.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/vendor.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-10-22 11:54:49 +0200
