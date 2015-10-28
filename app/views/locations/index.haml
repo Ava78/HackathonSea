@@ -1,2 +1,39 @@
+%p#notice= notice
+%script{:src => "//maps.google.com/maps/api/js?v=3.13&sensor=false&libraries=geometry", :type => "text/javascript"}
+
+%script{:src => "//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js", :type => "text/javascript"}
+
+%h1 Listes de vos plages préfèrées
+%table
+  %thead
+    %tr
+      %th Adresse
+      %th Latitude
+      %th Longitude
+      %th{:colspan => "3"}
+  %tbody
+    - @locations.each do |location|
+      %tr
+        %td= location.address
+        %td= location.latitude
+        %td= location.longitude
+        %td= link_to 'Voir', location
+        %td= link_to 'Modifier', edit_location_path(location)
+        %td= link_to 'Supprimer', location, method: :delete, data: { confirm: 'Etes Vous sur ?' }
+
+= link_to 'Rechercher une nouvelle Plage', new_location_path
+%br/
 - @locations.each do |loc|
   %p= loc.temp
+
+%div{:style => "width: 800px;"}
+  #map{:style => "width: 800px; height: 400px;"}
+:javascript
+  handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      markers = handler.addMarkers(#{raw @hash.to_json});
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+    });
+	
+

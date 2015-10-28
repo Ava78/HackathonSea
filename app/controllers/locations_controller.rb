@@ -5,15 +5,23 @@ class LocationsController < ApplicationController
   # GET /locations.json
   def index
     @locations = Location.all
+    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+    end
   end
+
+  
   # GET /locations/1
   # GET /locations/1.json
   def show
+
   end
 
   # GET /locations/new
   def new
     @location = Location.new
+    
   end
 
   # GET /locations/1/edit
@@ -27,7 +35,7 @@ class LocationsController < ApplicationController
 
     respond_to do |format|
       if @location.save
-        format.html { redirect_to @location, notice: 'Location was successfully created.' }
+        format.html { redirect_to @location, notice: 'Votre plage est enregistrée' }
         format.json { render :show, status: :created, location: @location }
       else
         format.html { render :new }
@@ -41,7 +49,7 @@ class LocationsController < ApplicationController
   def update
     respond_to do |format|
       if @location.update(location_params)
-        format.html { redirect_to @location, notice: 'Location was successfully updated.' }
+        format.html { redirect_to @location, notice: 'Votre Plage est mise à jour.' }
         format.json { render :show, status: :ok, location: @location }
       else
         format.html { render :edit }
@@ -55,7 +63,7 @@ class LocationsController < ApplicationController
   def destroy
     @location.destroy
     respond_to do |format|
-      format.html { redirect_to locations_url, notice: 'Location was successfully destroyed.' }
+      format.html { redirect_to locations_url, notice: 'Plage Supprimée.' }
       format.json { head :no_content }
     end
   end
