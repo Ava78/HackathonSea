@@ -2099,3 +2099,171 @@ Processing by LocationsController#index as HTML
   [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
   Rendered locations/index.haml within layouts/application (2004.5ms)
 Completed 200 OK in 2320ms (Views: 2304.8ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-10 23:24:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.haml within layouts/application (2302.9ms)
+Completed 200 OK in 3160ms (Views: 3139.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/base.self-2fc87a138ae56e9c169e7509cf25befc871bd73a4cc1ead0faa5ed5b9f85a4e5.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/bootstrap-theme.min.self-9d66c8257854598a8bb867788558ea1daa20065a3fe9a827b5ed3fea25b98ba3.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/bootstrap-theme.self-797c795b8478a63ecf57ed925bbf6d452e951329623561a6042c306da1b713f8.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/bootstrap.min.self-6655d1384d1509415d234003e6f81cf5de3d688790aaadc1091aa5bb5795b1f1.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/iconvault-preview.self-338653a452ae917bd2fdc0e9e52703b1551278ab7f10229d2f65db4546aa02c6.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/scaffolds.self-b6e06d09eff6d836b122e9bcd79fc1f26ac12703ecae7bf2164cee9ef0ef8c87.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/skeleton.self-1b854ca8b78041efa6402ca2eb48197ad14e0caab8d8522c99f433d0c2c4d2ac.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/underscore.self-8c17561264389571750ac522c272868d7105cf5e3f8af4761d09489b631d177c.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/gmaps_google.self-fa0e6da1364c8e7d6ab3f96ef7716a301363a69a563986dfeaf57630f042904b.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/vendor.self-8f06a73c35179188914ab50e057157639fce1401c1cdca640ac9cec33746fc5b.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/bootstrap.min.self-075878ec6a19d24f3b46052eb9e0e5bb5c2a098ac50d05d8e3a21309d129273a.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2015-11-10 23:24:55 +0100
+
+
+Started DELETE "/locations/3" for 127.0.0.1 at 2015-11-10 23:25:27 +0100
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oE4d/e3rMf3OfHJu/+KJdYSctqHrdQQ02c6JNxF8Cs2iqX9JZgfp6BeB95RANXMjzQMts7ol6tkAUv/FKXHIlA==", "id"=>"3"}
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 3]]
+  [1m[35m (192.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 207ms (ActiveRecord: 193.6ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-11-10 23:25:27 +0100
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.haml within layouts/application (1292.3ms)
+Completed 200 OK in 1465ms (Views: 1463.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/locations/4" for 127.0.0.1 at 2015-11-10 23:25:31 +0100
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SP+bvi9ENPKOXSWjizNxuWV3h+w7jfghIsidfZZch0xKGPkKpKjs51egoFk05IvvLOgc/mrdFsz7VOuPrlFFFQ==", "id"=>"4"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "locations" WHERE "locations"."id" = ?  [["id", 4]]
+  [1m[36m (143.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 148ms (ActiveRecord: 144.3ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-11-10 23:25:31 +0100
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.haml within layouts/application (642.0ms)
+Completed 200 OK in 756ms (Views: 754.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/locations/5" for 127.0.0.1 at 2015-11-10 23:25:34 +0100
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IVZET1jittkEPNiP/koi3xhnuD75mik9N8+w478TwSsjsSb70w5uzN3BXXVBndiJUfgjLKjKx9DuU8YRhx4Dcg==", "id"=>"5"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 5]]
+  [1m[35m (166.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 170ms (ActiveRecord: 167.0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-11-10 23:25:34 +0100
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.haml within layouts/application (1.8ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2015-11-10 23:25:41 +0100
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (12.3ms)
+  Rendered locations/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 165ms (Views: 164.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/locations" for 127.0.0.1 at 2015-11-10 23:25:46 +0100
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q9WKV/5+dmKjadGXgmJszFGXcPBErRjvEqmw7cwE1lapMujjdZKud3qUVG09tZaaGAjr4hX99gLLNcYf9AkUDw==", "location"=>{"address"=>"Hendaye"}, "commit"=>"Create Location"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "locations" ("address", "latitude", "longitude", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["address", "Hendaye"], ["latitude", 43.359399], ["longitude", -1.766148], ["created_at", "2015-11-10 22:25:46.717530"], ["updated_at", "2015-11-10 22:25:46.717530"]]
+  [1m[35m (106.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations/6
+Completed 302 Found in 285ms (ActiveRecord: 107.1ms)
+
+
+Started GET "/locations/6" for 127.0.0.1 at 2015-11-10 23:25:46 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered locations/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-11-10 23:25:55 +0100
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.3ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered locations/index.haml within layouts/application (671.2ms)
+Completed 200 OK in 757ms (Views: 755.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/locations/6" for 127.0.0.1 at 2015-11-10 23:26:40 +0100
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lnAElKMqHjppP0NYliggJv3e8uwdZFT8/yv+cenjkkGUl2YgKMbGL7DCxqIp/9pwtEFp/kw0uhEmt4iD0e5QGA==", "id"=>"6"}
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 6]]
+  [1m[35m (370.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/locations
+Completed 302 Found in 374ms (ActiveRecord: 371.1ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2015-11-10 23:26:40 +0100
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.3ms)[0m  [1mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.haml within layouts/application (1.9ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.3ms)
